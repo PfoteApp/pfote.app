@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#F2F2F7" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <title>Pfote Privacy Policy</title>
+    <style>
+        /* Styled like an iOS inset grouped list, the way the policy appears inside Pfote. */
+        :root {
+            --bg: #F2F2F7;
+            --cell: #FFFFFF;
+            --label: #000000;
+            --secondary: rgba(60, 60, 67, 0.6);
+            --separator: rgba(60, 60, 67, 0.18);
+            --accent: #F16034;
+            --blue: #007AFF;
+            --green: #34C759;
+            --gray: #8E8E93;
+            --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            --display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000000;
+                --cell: #1C1C1E;
+                --label: #FFFFFF;
+                --secondary: rgba(235, 235, 245, 0.6);
+                --separator: rgba(84, 84, 88, 0.6);
+                --accent: #FF7A4A;
+                --blue: #0A84FF;
+                --green: #30D158;
+                --gray: #8E8E93;
+            }
+        }
+        * { box-sizing: border-box; }
+        html { -webkit-text-size-adjust: 100%; }
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--label);
+            font: 17px/1.35 var(--font);
+            letter-spacing: -0.01em;
+            padding: env(safe-area-inset-top) max(16px, env(safe-area-inset-right)) calc(40px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+        }
+        main { max-width: 640px; margin: 0 auto; }
+
+        header { padding: 44px 4px 20px; display: grid; gap: 14px; }
+        h1 { margin: 0; font: 700 34px/1.12 var(--display); letter-spacing: 0.01em; }
+        .updated { color: var(--secondary); font-size: 15px; margin: -6px 0 0; }
+
+        section { margin-top: 28px; }
+        h2 {
+            margin: 0 0 7px; padding: 0 16px;
+            font: 600 20px/1.25 var(--display);
+        }
+        .group { background: var(--cell); border-radius: 26px; overflow: hidden; }
+        .cell { padding: 12px 20px; position: relative; }
+        .cell p { margin: 0; }
+        /* Separators start at the text, like iOS lists. */
+        .cell + .cell::before {
+            content: ""; position: absolute; top: 0; left: 20px; right: 0;
+            border-top: 0.5px solid var(--separator);
+        }
+        .footnote { margin: 7px 0 0; padding: 0 20px; color: var(--secondary); font-size: 13px; line-height: 1.38; }
+
+        .lead { font-size: 17px; }
+        .lead strong { font-weight: 600; }
+
+        .row-text { display: grid; gap: 1px; min-width: 0; }
+        .row-text span { color: var(--secondary); font-size: 15px; }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<main>
+    <header>
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated November 1, 2026</p>
+    </header>
+
+    <section>
+        <div class="group">
+            <div class="cell lead"><p><strong>Pfote doesn’t collect any data.</strong> There are no accounts, no analytics, no ads and no tracking, and the developer never sees your information.</p></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Where Your Data Is</h2>
+        <div class="group">
+            <div class="cell"><p>Pets, medications, dose history, weights and photos are stored on your device. If iCloud is on, they’re also kept in your private iCloud account and synced between your own devices.</p></div>
+        </div>
+        <p class="footnote">Apple protects this data, and nobody else can read it.</p>
+    </section>
+
+    <section>
+        <h2>Medication Descriptions</h2>
+        <div class="group">
+            <div class="cell"><p>To show a short description of a medication, its name (or the search name you enter) is sent to Wikipedia and Wikidata. Nothing else is sent.</p></div>
+        </div>
+        <p class="footnote">You can hide descriptions anytime.</p>
+    </section>
+
+    <section>
+        <h2>Backups, PDFs and Sharing</h2>
+        <div class="group">
+            <div class="cell"><p>Backups, overviews and medical history PDFs are only created when you ask for them, and go only where you send them.</p></div>
+            <div class="cell"><p>The name you enter under “Your Name” is saved with the doses you log, so everyone caring for your pets can see who gave a dose. It stays in your own data.</p></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Permissions</h2>
+        <div class="group">
+            <div class="cell">
+                <div class="row-text"><strong>Notifications and Alarms</strong><span>For dose and refill reminders.</span></div>
+            </div>
+            <div class="cell">
+                <div class="row-text"><strong>Camera and Photos</strong><span>Only for pictures you choose.</span></div>
+            </div>
+            <div class="cell">
+                <div class="row-text"><strong>Face ID</strong><span>To lock the app, if you turn that on.</span></div>
+            </div>
+        </div>
+        <p class="footnote">All of this stays on your device.</p>
+    </section>
+
+    <section>
+        <h2>Children</h2>
+        <div class="group">
+            <div class="cell"><p>Pfote isn’t directed at children and collects no information from anyone.</p></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Changes</h2>
+        <div class="group">
+            <div class="cell"><p>If this policy changes, the new version is posted on this page with a new date.</p></div>
+        </div>
+        <p class="footnote">Questions? Use the support link on Pfote’s App Store page.</p>
+    </section>
+</main>
+</body>
+</html>
